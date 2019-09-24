@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+
+  <style>
+    .hideElement {
+      visibility: hidden;
+    }
+
+    .showElement {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="widget showElement">
+    <div class="mainHeading">
+      <h1>Hi there</h1>
+    </div>
+
+    <div class="subHeading">
+      My Amazing subheading...
+    </div>
+
+  </div>
+  <button onclick="contentToggle()">Toggle Content</button>      //button to hide and show feature with onclick event
+</body>
+<script>
+  // const mainHeading = document.querySelector('.mainHeading'); // 
+                                                                 //
+  // const headings = document.querySelectorAll('div');  // variable set to document query selector all and bring in all the divs
+                                                         //returns a nodelist-brings back first and second divs
+  const widget = document.querySelector('.widget');  // variable widget set equal to the document querySelector and pass in the class .widget
+                                                     //querySelector brings back just a single element
+  function contentToggle() {             // 
+    if (widget.classList.contains('showElement')) { // if the widget classList contains the showElement
+      widget.classList.remove('showElement');  
+      widget.classList.add('hideElement');  
+    } else {
+      widget.classList.remove('hideElement'); 
+      widget.classList.add('showElement');  
+    }
+  }
+  //
+  // function contentToggle() {     // function here
+  //   console.log(headings);       // 
+  //   headings.forEach((heading) => {  // run forEach over headings and pass it an arrow function-iterates over list
+  //     if (heading.classList.contains('showElement')) {  // if the heading contains the class of show element
+  //       heading.classList.remove('showElement');  // in code block- heading remove the show element class
+  //       heading.classList.add('hideElement');  // and add the hide element 
+  //     } else {
+  //       heading.classList.remove('hideElement');  // now else remove the hide element
+  //       heading.classList.add('showElement');  // and add the show element on click
+  //     }
+  //   });
+  // }
+</script>
+</html>

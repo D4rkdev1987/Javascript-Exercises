@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lodash Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+  </head>
+  <body>
+  </body>
+
+  <script>
+    //TIMES-allows you to quickly how many times a process to run
+      randNumber = () => {
+          return Math.round(Math.random() * 100)
+      }
+      const sampleNumbers = _.times(5, randNumber); //times takes in 2 arguments 5 and calling the randNumber(all stored in a single variable)     
+      console.log(sampleNumbers);  //it's running the process and gives you random numbers every time you refresh
+//////////////////////////////////////////////////
+    //FILTER-building something like a top player report 
+      //set of 5 objects below
+    const players = [   
+      { name: 'Bregman, A', battingAverage: 0.284},
+      { name: 'Altuve, J', battingAverage: 0.384},
+      { name: 'Springer, G', battingAverage: 0.283},
+      { name: 'Gurriel, Y', battingAverage: 0.299},
+      { name: 'Gonzalez, M', battingAverage: 0.303}
+    ] 
+    const over300 = _.filter(players, player => {
+        return player.battingAverage > 0.300;
+    }); //takes in a few items players array then a function
+    console.log(over300);
+/////////////////////////////////////////////////
+    </script>
+</html>

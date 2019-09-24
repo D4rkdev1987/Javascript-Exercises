@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+</head>
+
+<body>
+  <div id="dateSlot"></div>
+  <button id="dateBtn">Click for Date</button>
+  <!-- <button onclick="renderDate()">Click for Date</button> --> //onclick handler listening to click-render the dateFunction
+</body>
+
+<script>
+  const dateElement = document.getElementById('dateSlot'); // create the variable then find the document and pass in the dateSlot
+  const dateBtn = document.getElementById('dateBtn'); //dateBtn set equal to getElementById call it dateBtn
+  // renderDate = () => {
+  //   dateElement.innerHTML = Date(); //we have access to the innerHTML(html inside element) set equal to current date
+  // }
+  dateBtn.addEventListener('click', (event) => { // listener on dateBtn then add event listener listening to click pass in the event
+    dateElement.innerHTML = Date();              // set innerHTML equal to the date
+  });
+</script>
+</html>

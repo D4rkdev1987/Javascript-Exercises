@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+</head>
+
+<body>
+
+  <input type="text" id="searchBar">
+
+</body>
+
+<script>
+  const hotKeys = (e) => {           // ceate the variable hotkeys then e(event) arrow function
+    let windowEvent = window.event ? event : e;  // select the windowevent set it equal (listen in the window and then the event) ternary operator if event then e
+    if (windowEvent.keyCode == 66 && windowEvent.ctrlKey) { // add the conitional if window event .keycode(reservered word) is equal to 66(rep letter be in keyboard)
+                                                            // and the window event .ctrlKey--checking if windowevent is set
+      const searchBar = document.querySelector('#searchBar'); // activate search bar-select the searchbar and set equal to querySelector and then grab the id searchbar
+      searchBar.focus();             // then just use the function focus
+    }
+  }
+  document.onkeydown = hotKeys;      // now bind the hotkeys to the onkeydown event--overriding the onkeydown function
+</script>
+
+</html>

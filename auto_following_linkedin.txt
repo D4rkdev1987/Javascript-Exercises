@@ -1,0 +1,19 @@
+auto tasks on likedin 
+right click on follow and inspect
+ button element-we grab the class mn-discorvery.......
+ to test 
+ let hashtagBtns = document.querySelectorAll('.paste in button class here')
+ now look for hashtagBtns --brings follow buttons
+
+ now to autmate hashtagBtns
+ hashtagBtns.forEach(btn => btn.click())
+
+ unfollow below
+ find the class button in the follow
+ const followingBtns = document.querySelectorAll('.paste in the class here')
+ followingBtns.forEach(followbtn => followbtn.click) will unfollow everything you followed above
+
+ /first step is querying it and store in a variable
+ /then just clicking on the button
+ /for each-can treat each element as if you were clicking 
+ 

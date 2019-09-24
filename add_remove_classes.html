@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+</head>
+
+<style>
+  .activeHeading {
+    color: firebrick;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  .nonActiveHeading {
+    color: cornflowerblue;
+    font-size: 4em;
+    cursor: pointer;
+  }
+</style>
+<body>
+
+  <div id="mainHeading" class="activeHeading">
+    Hi there
+  </div>
+
+</body>
+
+<script>
+  const heading = document.getElementById('mainHeading');  // const varibale heading and run the query-and pass in mainheading
+  heading.onclick = () => {                                // click handler-call class and then onclick and pass in an arrow function-selected the heading here
+    if (heading.classList.contains('activeHeading')) {     // conditional-if the heading-call the classList(an array-DOM token list), then contains then pass in activeHeading
+      heading.classList.remove('activeHeading');           // first we work with the array and remove the active heading
+      heading.classList.add('nonActiveHeading');           // then add the nonActiveHeading here
+    } else {
+      heading.classList.add('activeHeading');              // for the else statement just revers both features
+      heading.classList.remove('nonActiveHeading');        
+    };
+  }
+   
+  //SINGLE CLASSES
+  heading.onclick = () => {                                // click handler here call class heading then the onclick followed by an arrow function
+    if (heading.classList.contains('activeHeading')) {     // 
+      heading.className = 'nonActiveHeading';              // just set the class name here 
+    } else {
+      heading.className = 'activeHeading';                 
+    };                                                     //same onclick behavior-but if you had other element classes
+  }
+</script>
+</html>

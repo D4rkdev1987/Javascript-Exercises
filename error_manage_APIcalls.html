@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>API Communication Demo</title>
+  </head>
+  <body>
+
+  </body>
+
+  <script>
+    class ApiError extends Error {         //custome class that extends the error
+      constructor(msg = 'An api error occurred', ...params) { //the constructor with defualt message the restful params
+        super(...params);                  //
+        this.msg = msg;                    //this.message is set equal to the message
+      }
+    }
+    var request = new XMLHttpRequest();    // create a variable request new then XML library add parens to make run
+    request.open('GET', 'http://api.dailysmarty.com/oops', true); // open twhat type of action to perform-GET(get data elements) and then pass in the api url
+    request.onload = function() {          //request onload(recieving data create an anonymous function)
+      if (request.status >= 200 && request.status < 400) {    // if request the request status is >= 200 and less than 400-HTTP status codes
+        var data = JSON.parse(request.responseText);          // create a variable data set it equal to JSON.parse(arse request) --qurey url take in params, and parse as json
+        console.log(data);                 //brought it in as a post object
+      } else {
+        throw new ApiError('ApiError', `An API error occurred with a status code of ${request.status}`);
+        //above throw the new api error -string literal (backticks) then string interpolation-$request
+      }
+    };
+    request.send(); //call it by using request.send
+  </script>
+</html>

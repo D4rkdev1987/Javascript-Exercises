@@ -1,0 +1,28 @@
+
+4. $('.gsfi').value = '' 
+5. $('.gsfi').value = 'JavaScript tips'
+
+to automate tasks in google
+
+reference to #
+figure out which data you are working with-selecting the value
+look at the class and id-one spot on page class-anywhere you want
+the two ways to use a selctor in browser
+///////////////////////////////////////////
+$('.gsfi') -press enter and it returns the dom node-automate in browser
+const searchBar = document.querySelector('.gsfi') then searchBar
+///////////////////////////////////////////
+to set the value
+$('.gsfi').value = 'Javascript tips' which returns "Javscript tips"
+above you grabbed the value and told it to change the value and place string inside
+//////////////////////////////////////////
+now to find the button
+tarveersing the dom- grab element further up- then search through elements
+$('.VlcLAe') returns the entire object
+$('.VlcLAe').childNodes[0]   //tells browser we are interested in what is nested
+                         //moved form jsb 
+$('.VlcLAe').childNodes[3].childNodes[1]
+$('.VlcLAe').childNodes[3].childNodes[1].click()  will perform the search
+                        
+
+

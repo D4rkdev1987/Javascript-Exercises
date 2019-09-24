@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+</head>
+
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
+<body>
+
+  <button id="toggleBtn">Toggle Me</button>
+
+  <div id="mainHeading" class="hidden">
+    Hi there
+  </div>
+
+</body>
+
+<script>
+  const heading = document.getElementById('mainHeading'); // selector first -use getElement by id and pass in mainheading
+  const btn = document.getElementById('toggleBtn'); // now grab accss to the button here
+  btn.addEventListener('click', (e) => { // the event listener and pass in the click and the function
+    heading.classList.toggle('hidden'); //grab the heading classlist and then toggle function-toggle expects the class we want to toggle(hidden)
+  });
+</script>
+</html>

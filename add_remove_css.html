@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+
+  <style>
+    img {
+      width: 400px;
+    }
+    .site-img {
+      border: 0px 40px 0px 0px solid transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class='container'>
+    <img src="https://s3.amazonaws.com/bottega-devcamp/browser-js/laptop.jpg" class="site-img" alt="Laptop">
+  </div>
+</body>
+
+<script>
+  const laptop = document.querySelector('.site-img');  //create the variable and use the querySelector and pass in the class look up
+
+  laptop.addEventListener('mouseover', (e) => {        // pass in the mouseover listener and second arg e and the function
+    e.target.style.borderRight = '40px solid red';     //use target which is the element-then style-camel case the borderRight then insert the style
+  });
+
+  laptop.addEventListener('mouseout', (e) => {         // now insert mouseout with the same code
+    e.target.style.borderRight = '40px solid transparent';  // insert transparent-
+  });
+</script>
+</html>

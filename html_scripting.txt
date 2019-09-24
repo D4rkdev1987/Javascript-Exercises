@@ -1,0 +1,14 @@
+in the browser-to perform task content on the page
+click on body in the elements and it shows what is in it
+if you click on inspect and select something it will show you exactly what you select
+console testing:
+first say document;-gives an object of document-we are telling JS we want everything we see
+next function document.getElementsByClassName('Class Name here');
+if you open it it will show length for example-
+if you click the arrows to drop down it will show you what you can call
+find the innerHtml to select and change it---
+
+document.getElementsByClassName('Class Name here')[0]; then use bracket notation
+document.getElementsByClassName('Class Name here')[0].innerHTML = "Hi There";
+
+(scenario if you need to change something on the fly) 
