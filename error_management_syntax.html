@@ -10,18 +10,18 @@
   </body>
 
   <script>
-    function siteComponent(func) {   //create a function called siteComponent(take a function as an argument-should be passed a function)
-      return func();                 //return the function and call it with parens
+    function siteComponent(func) {   //create a function called siteComponent(take a function as an argument<--whenever called it's passed a function-should be passed a function)
+      return func();                 //return the function and call the function and make sure you place parens after
     }
     //try and catch blocks- if you try and it doesn't work you catch the error
     try { 
       console.log(siteComponent('oops'));  //process we are trying
-    } catch(e) {                           //catch expects atleast one argument and pass in e short for error
+    } catch(e) {                           //catch expects atleast one argument and pass in e <--short for error(catch whatever is going to not work)
       console.log('An error occurred', e); //console log the actual error then pass in the second argument e
     }
-    widget = () => {                       //widget-simply return a string widget-arrow syntax
+    widget = () => {                       //widget<---simply return a string widget that returns a div string that says hi there-arrow syntax
       return '<div>Hi there</div>';        //return a div that says hi there
     }
-    console.log(siteComponent(widget));    //console log call siteComponent function and pass in widget(the widget is passed into argument)
+    console.log(siteComponent(widget));    //console log then call the siteComponent function and pass in widget(the widget is passed into argument)
   </script>
 </html>

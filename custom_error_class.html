@@ -8,23 +8,22 @@
   </body>
 
   <script>
-    class DevcampError extends Error {          //create a class Devcamp now extend the error class in js
+    class DevcampError extends Error {          //create a class DevcampError which extends the error class in js- then curly's
       constructor(msg = 'An error occurred', ...params) {  //add the constructor function and pass it a message saying an error occured
-        super(...params);                       //call super(function calls the error class) then pass the rest operator ...params
+        super(...params);                       //call super(function calls the error class(inherting the error class)) then pass the rest operator ...params
 
-        this.msg = msg;                         //then set this msg equal to the msg
+        this.msg = msg;                         //then set this msg equal to the msg-which is the first argument in the constructor
       }
     }
 
-
-    function siteComponent(func) {              //
-      return func();                            //
+    function siteComponent(func) {              
+      return func();                            
     }
 
     try {
       console.log(siteComponent('oops'));
     } catch(e) {
-      throw new DevcampError('DevcampError', e); //thow the new error and then pass in the DevcampError, 
+      throw new DevcampError('DevcampError', e); //thow the new error and then pass in the DevcampError, then the e variable which will give you the exact error that ocurred
     }
 
     widget = () => {

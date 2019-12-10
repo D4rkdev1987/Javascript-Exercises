@@ -1,8 +1,8 @@
-function ageVerification(age) {  //function called age verification takes in age
-    if (age > 25) {       
+function ageVerification(age) {                //function called age verification takes in an age, and inside place the conditional (wrapping it in a function)
+    if (age > 25) {                            // if the age is greater than 25 then
       console.log('can rent a car');
-    } else {
-      console.log("can't rent a car");
+    } else {                                   // else statement
+      console.log("can't rent a car"); 
     }
     ////////////////////////////////////////////////////////////////
     let answer = age > 25 ? "can rent a car" : "can't rent a car";
@@ -20,19 +20,22 @@ function ageVerification(age) {  //function called age verification takes in age
   /////////////////////////////////////////////////////////////////////
   
 
-  function adminControls(user) {     //function adminControls expects a user
-    if (user) {               //if user logged in
-      if (user.admin) {       //another conditional here-if user.admin
-        console.log('showing admin controls...');  //
+  function adminControls(user) {                 //function adminControls and it expects a user
+    if (user) {                                  //if user logged in-you know you have a user here
+      if (user.admin) {                          //another conditional here-if user.admin -true or false value if user is admin
+        console.log('showing admin controls...'); 
       } else {
-        console.log('You need to be an admin');
+        console.log('You need to be an admin');  // if not an admin
       }
     } else {
-        console.log('You need to be logged in');
+        console.log('You need to be logged in'); // if user is a guest user or not logged in
     }
 
-    //ternary operator below-a compunded one 
+    //////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////
+    //TERNARY OPERATOR FOR ABOVE CODE below-a compunded one 
     let response = user ? user.admin ? "showing admin controls" : "you need to be admin" : "you need to be logged in";
+    // user ? (is user true) now another ternary operator- user.admin ?(is user admin) and then the console logs each followed by a colon
     //////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////
 
@@ -51,7 +54,6 @@ function ageVerification(age) {  //function called age verification takes in age
     adminControls(userOne);
     adminControls(userTwo);
     adminControls(userThree);
-    /////////////////////////////////////////////////////////
   }
   
   //ternary operator line 34
@@ -61,7 +63,7 @@ function ageVerification(age) {  //function called age verification takes in age
   // and says you need to be logged in (guest)
 
   //
-  //
-  //ternary operator example below-entire condition on a single line
+  // example from beginning 
+  //ternary operator example below-ternary allows you to write entire condition on a single line
   <div className={hasPermission ? 'active' : diasabled}></div>
-  //if has permission i want you to return active if not return disabled
+  //if has permission i want you to return active and if not return disabled

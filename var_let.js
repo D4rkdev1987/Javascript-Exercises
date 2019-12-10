@@ -9,4 +9,7 @@ console.log(age);
                    //age is declared already
 let age = 15;     // nope! you cannot redefine the variable
 console.log(age);
-                  //gives a more strict framework
+                  //gives a more strict framework-when you want to have a datapoint you dont want overridden 
+
+// let variable doesn't allow you to change the declared variable
+// var allows you to replace it and change it                   

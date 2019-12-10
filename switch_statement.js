@@ -1,3 +1,4 @@
+// Switch Statements
 //check for Data Types
 //case statemtn -ability to build your own scenarios
 var dataPoint = {};  //create variable dataPoint with an empty string
@@ -8,10 +9,10 @@ switch (typeof dataPoint) {   //switch then put inside whatever value you want
     break;                   //found case and scenario-skip everything else-to end here
   case "number":             //case for number-everything inside will out number
     console.log("It's a number");
-    break;                  //-to end here
+    break;                  //-to end the switch statement here
   case "boolean":
     console.log("It's a boolean");
     break;
-  default:                  //default-ex-error message
+  default:                  //default-example-error message
     console.log('No matches');
 }

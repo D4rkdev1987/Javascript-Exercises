@@ -1,9 +1,9 @@
 //build a class and then a method that alternates which side of an array it pops off
 
 
-class ArrayPopper {            // create a class called array popper 
+class ArrayPopper {            // create a class called array popper -class can have data inside
     constructor(arr) {         //create a constructor anticipates to have an array
-      this.arr = arr;          //then set up the instance variable
+      this.arr = arr;          //then inside the constructor set up the instance variable
       this.atBeginning = true; //then pass in a second value-defualt value(boolean when created it keeps track of it from the beginning of array)
     }
   
@@ -16,7 +16,7 @@ class ArrayPopper {            // create a class called array popper
   
   const ap = new ArrayPopper([1, 2, 3, 4, 5]);  //call const variable then new arrayPopper and pass in the array
   
-  ap.togglePopper(); //? 1 when we create a new array popper it hits the ternary operator-shift/return first value(array number 1)
+  ap.togglePopper(); //? 1 when we create a new array popper it hits the ternary operator-shift(return) first value(array number 1)
   ap.togglePopper(); //? 5 
   ap.togglePopper(); //? 2
   ap.togglePopper(); //? 4

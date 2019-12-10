@@ -1,10 +1,11 @@
 //calculate batting average
+// method names in the return-getCurrentAverage and updateHitsAndAtBats
 
 function battingAverage () {    // function declaration takes no arguments
-    var hits = 100;             //local variables-set hits to 100
+    var hits = 100;             //started it with 2 local variables-set hits to 100
     var atBats = 300;           // set atBats to 300
-  
-    return {                    //a closer is being able to wrap behavior in a function and able to use it and call it
+  // function returns two methods below
+    return {                    //a closer is being able to wrap behavior in a function and able to use it and call it howeveer you need to
       getCurrentAverage: function () {       //returns an object on return-functions caled methods-getCyrrentAverage
         return (hits/atBats);                //return hits devided by at bats
       },//first method above
@@ -15,7 +16,7 @@ function battingAverage () {    // function declaration takes no arguments
     }
   }
   //everytime something is added you can keep track of it below
-  var altuve = battingAverage();       //new instance-altuve variable and storing battingAverage inside
+  var altuve = battingAverage();       //new instance-altuve variable and storing battingAverage function inside
   console.log(altuve.getCurrentAverage());  //we can call altuve.getCurrentAverage we are able to call the function like a normal attribute
   altuve.updateHitsAndAtBats(0, 20);   //now updating here-change values-pass in no hits and 20 atBats
   console.log(altuve.getCurrentAverage()); // this is dynamic so 0.33 above and for this one it returns 0.3125

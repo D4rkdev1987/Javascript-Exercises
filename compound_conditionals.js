@@ -16,6 +16,6 @@ if (age <= 10) {
 
 //conditional-range
 //line 7
-////else if and put in a range-age is greater than or equal to 16 and(&&) age is greater than 25
+////else if and put in a range---> age is greater than or equal to 16 and(&&) age is greater than 25
 //line 11 
-///else if - if the age is greater than or equal to 25 
+///else if ---> if the age is greater than or equal to 25 

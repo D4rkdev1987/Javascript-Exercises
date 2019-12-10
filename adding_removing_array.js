@@ -4,9 +4,9 @@ arr.pop(); // "Springer"   //is a function- and returns the very last item from 
                            //cleaning or popping items off the array
 arr; // ['Altuve', 'Bregman', 'Correa']
 
-arr.push('Bagwell'); // 4 -add Bagwell to the array
+arr.push('Bagwell'); // 4 -this adds Bagwell to the array
 arr; // ['Altuve', 'Bregman', 'Correa', 'Bagwell']
-                     //var elementPopped = arr.pop(); returns what you popped up
+                     // var elementPopped = arr.pop();   returns what you popped up
 
 
 arr.shift(); // ['Bregman', 'Correa', 'Bagwell'] //to pull Altuve off the list-will return altuve but new array starts with Bregman

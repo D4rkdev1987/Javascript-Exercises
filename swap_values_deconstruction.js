@@ -9,7 +9,7 @@ let tempPlayerTwo = playerTwo;
 //performing the swap below
 playerOne = tempPlayerTwo;
 playerTwo = tempPlayerOne;
-
+/////////////////////////////////
 //variable deconstruction to swap values below
 [playerOne, playerTwo] = [playerTwo, playerOne];
 console.log(`Player One: ${playerOne} Player Two: ${playerTwo}`);

@@ -1,3 +1,6 @@
+//created the constructor method
+//created the method can teach allows you to pass in the instructor and called directly
+
 class Instructor {
     constructor({ name, role = "assistant" }) {
       this.role = role;
@@ -38,4 +41,5 @@ class Instructor {
   
   // "Alice can teach: true"
   console.log(
-    `${seniorInstructor.name} can teach: ${Instructor.canTeach(seniorInstructor)}`
+    `${seniorInstructor.name} can teach: ${Instructor.canTeach(seniorInstructor)}`);
+

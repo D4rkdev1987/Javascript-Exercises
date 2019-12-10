@@ -2,10 +2,10 @@ function fullName(first, last) {  // function called fullName pass in first and 
     return `${first} ${last}`;    // return the first name and then the last
   }
   
-  fullName('Kristine', 'Hudgens');  // call fullName and pass in the strings with the names
+  fullName('Kristine', 'Hudgens');  // call fullName and pass in the strings with the names(kristine and Hudgens)
   
   
-  newFullName = (first, last) => {  // another functionarrow function pass in first and last then the arrow
+  newFullName = (first, last) => {  // another function-arrow function pass in first and last then the arrow
     return `${first} ${last}`;      // use backticks and then the string interpolation
   }
   

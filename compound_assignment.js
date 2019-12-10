@@ -4,7 +4,8 @@ var name = 'Tiffany'; //equals represents the assignment
 var sum = 0;
 var gradeOne = 100;
 var gradeTwo = 80;
-//addition assignment
+
+//addition assignment operator-performs assignment and the operation
 sum += gradeOne; // 100
 sum; // 100
 //short hand for sum = sum + grade

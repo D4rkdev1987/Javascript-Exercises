@@ -1,4 +1,5 @@
 //check for data types
+// using typeof function below
 
 typeof 12;
 // "number"

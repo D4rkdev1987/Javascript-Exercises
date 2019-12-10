@@ -1,4 +1,5 @@
-//arguments you pass in objects you actually pass in a reference
+//reference vs Value
+//arguments you pass in objects you actually pass in a reference 
 //when you pass an object as an argument its passed as an reference
 
 var someUser = {       //variable an object here
@@ -12,8 +13,8 @@ function nameFormatter (user) {  //function declaration takes in a user
 nameFormatter(someUser); // "Oops"   
 
 someUser; // Object {name: "Oops"}  
-
-//////////////////////////////////////////////////
+//                                       PASSING AN OBJECT AS AN ARGUMENT ABOVE
+//////////////////////////////////////////////////////////////////////////////////
 
 var someName = 'Tiffany';       //variable named some name named Tiffany
 

@@ -6,22 +6,27 @@ var ageTwo = '12';
 if (age == ageTwo) {
     console.log('They are equal');
 }
-//strict equal-checks not only value but on type
+
+//strict equal-checks not only value but on type as well
 if (age === ageTwo) {
   console.log('They are equal');
 }
+
 //to check if age is not equal to ageTwo
 if (age != ageTwo) {
     console.log('Not equal');
 }
+
 //strict not equals-best pratice
 if (age !== ageTwo) {
   console.log('Not equal');
 }
+
 //if age is greater than or equal to
 if (age >= 25) {
   console.log('Old enough to rent a car');
 }
+
 // if age is less than or equal to 
 if (age <= 10) {
   console.log('You can eat from the kid menu');

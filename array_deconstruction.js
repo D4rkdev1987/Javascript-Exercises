@@ -1,5 +1,5 @@
 //Array Destructuring 
-
+//below is the array
 const apiList = [
     'https://api.dailysmarty.com/posts',
     'https://api.github.com/users/jordanhudgens/repos',
@@ -13,5 +13,5 @@ const apiList = [
   console.log(profile);
 
   //array of links of api endpoints above
-  //start off with const then wrap the variables that we want to create posts repos profile then set it to the apilist
+  //start off with const then wrap the variables that we want in brackets (posts repos profile) then set it to the apilist
   

@@ -14,21 +14,27 @@
 
 2 ** 10; // 1024  using exponents here-use two **
 
-var num = 2;
+var num = 2; // variable set to num and equal to 2
 // incrementer operator
+
 //post fix notation-operator is placed at the end
-num++; // 2  
-//prefix notation 
+num++; // 2 -returns the preexisting number(keep a copy of the variable pre incremented number)
+
+//prefix notation- place the operator in the front 
 ++num; // 4
 
 num; // 4
+
 //decrementor operator-decreases by one
-num--; // 4
-// return value what we want
---num; // 2
+num--; // returns 4 but it did work and decreased it to 3
 num; // 3
 
+// return value what we want
+--num; // 2
 
+
+// if you don't call it on a variable like above this is the error you get
+// variables are special containers that hold values REMEMBER
 // 2++; // VM3506:1 Uncaught ReferenceError: Invalid left-hand side expression in postfix operation
 // ++2; // VM3508:1 Uncaught ReferenceError: Invalid left-hand side expression in prefix operation
 

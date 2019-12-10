@@ -14,11 +14,11 @@ const userOne = {           //user object
     return `${this.lastName}, ${this.firstName}`;  //string literal syntax (backticks)
   };
   
-  // Nope!-can't use arrow function because returns undefined
-  //expression vs arrow-arrow changes the way it works-references the single function not what is bound to it
-  // const fullName = () => {
-  //   return `${this.lastName}, ${this.firstName}`;
-  // };
+  ////Nope!-can't use arrow function because returns undefined
+  ////expression vs arrow-the arrow changes the way it works-references the single function not what is bound to it
+  //// const fullName = () => {
+  ////   return `${this.lastName}, ${this.firstName}`;
+  //// };
 
   //JS allows you to connect a function with an object below
   const kristine = fullName.bind(userOne);//variable kristine-cal the function fullName then bind userOne
@@ -26,3 +26,10 @@ const userOne = {           //user object
   
   kristine();
   tiffany();
+
+  // created 2 user objects
+  // now created a function expression(anon function stored in a variable)
+  // inside it return with string literal syntax last name and first name
+  // (what we want to inject and bind the function and the objects together now--call this and have it reference our object)
+  // now say const and variable kristine equal to fullname bind and pass in userOne( and do the same for userTwo) 
+  // call kristine() and it will return/print out Hudgens, Kristine 
