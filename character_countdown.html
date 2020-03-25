@@ -8,32 +8,32 @@
   <input type="text" class="msgInput">
 
   <div>
-    Characters left <span class="counter"></span>
+    Characters left <span class="counter">20</span>
   </div>
 </body>
 
 <script>
-  const getCurrentContentLength = (content, max) => { // takes in 2 arguments the content and max value
-    const maxLength = max;                     // 
-    if (content.length > maxLength) {          // basic conditional here- if content is greater than max 
-      return false;              
+  const getCurrentContentLength = (content, max) => {     //create a variable which takes in takes in 2 arguments the content and max value
+    const maxLength = max;                                // 
+    if (content.length > maxLength) {                     // basic conditional here- if content lentth is greater than max then return false
+      return false;                                       // return false-no longer insuring character count
     } else {
-      return true;               
+      return true;                                        // otherwise return true
     }
   }
-  const msgInput = document.querySelector('.msgInput'); // use the query selector and pass in the msgInput
-  const counter = document.querySelector('.counter');  
-  const max = 20;   
+  const msgInput = document.querySelector('.msgInput');    //set the variable here msgInput use the query selector and pass in the msgInput class
+  const counter = document.querySelector('.counter');      // grab the message counter and pass in the counter class
+  const max = 20;                                          // max count set to 20 here
 
   // Nope
-  // msgInput.addEventListener('keyup', (e) => {       
+  // msgInput.addEventListener('onkeyup', (e) => {       //arrow function changes the scope of the defined, so it won't work
   //   console.log(e); 
   // });
 
-  msgInput.onkeyup = function() {                       // use onkeyup and set it equal to function declaration
-    counter.innerHTML = max - this.value.length;       // grab the counter set equal to max minus the value length
-    if(!getCurrentContentLength(this.value, (max - 1))) {  // if the length (takes in this.value), and takes in the max -1
-      msgInput.disabled = true;                         //then say message input disabled to true
+  msgInput.onkeyup = function() {                          // use onkeyup and set it equal to function declaration
+    counter.innerHTML = max - this.value.length;           // grab the message counter inner html(to set value) set equal to max then minus the value length
+    if(!getCurrentContentLength(this.value, (max - 1))) {  // if the function length (takes in this.value), and takes in the max -1----if you don't do minus 1 the values will return an off by one error
+      msgInput.disabled = true;                            //then say message input disabled to true
     }
   }
 </script>

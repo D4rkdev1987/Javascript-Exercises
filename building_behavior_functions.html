@@ -23,12 +23,12 @@
 <script>
     const msgInput = document.querySelector('.msgInput');     
     const msgCounter = document.querySelector('.msgCounter'); 
-    const tagsInput = document.querySelector('.tags');         //
-    const tagsCounter = document.querySelector('.tagsCounter');//
+    const tagsInput = document.querySelector('.tags'); 
+    const tagsCounter = document.querySelector('.tagsCounter');
 
-    const getCurrentContentLength = (content, max) => {  //
-        const maxLength = max;                    //
-        if (content.length > maxLength) {         //
+    const getCurrentContentLength = (content, max) => {  
+        const maxLength = max;                    
+        if (content.length > maxLength) {         
             return false;
         } else {
             return true;
@@ -46,7 +46,7 @@
             counter.innerHTML = maxCount - this.value.length;  
 
             if(!getCurrentContentLength(this.value, (maxCount - 1))) { 
-                textField.disabled = true; //this is were we are placing the text field
+                textField.disabled = true;                              //this is were we are placing the text field
             }
         }
     }

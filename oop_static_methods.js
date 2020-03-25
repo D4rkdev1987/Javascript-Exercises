@@ -2,7 +2,7 @@
 //created the method can teach allows you to pass in the instructor and called directly
 
 class Instructor {
-    constructor({ name, role = "assistant" }) {
+    constructor({ name, role = "assistant" }) { //constructor method here
       this.role = role;
       this.name = name;
     }
@@ -17,7 +17,8 @@ class Instructor {
     static helloWorld() {        //static method-helloworld nothing passed in
       console.log('Hi there');
     }
-    Instructor.helloWorld(); // "Hi there"// static method does not require instance(instance won't work here)
+    Instructor.helloWorld(); // "Hi there"// static method does not require the instance(instance won't work here)
+    //must call on the class iteself
     //////////////////////////////////////////////////////
 
     // Static method

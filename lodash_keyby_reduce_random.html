@@ -53,7 +53,7 @@
     ];
 
     const webLinks = _.reduce(links, function(content, link) {    //variable weblinks set equal to _.reduce pass in links then function that expects content and then link
-      return `<a href='${link}'>${link}</a><br>`.concat(content); //return string literal build html link-then pass the link again. .concat(new string)
+      return `<a href='${link}'>${link}</a><br>`.concat(content); //return string literal build html link-then pass the link again. .concat(new string) take content and addto the content 
     }, ''); //argument empty string
 
 

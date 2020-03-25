@@ -1,3 +1,4 @@
+///USING EXPONENTS
 2 + 2; // 4
 
 2 - 2; // 0
@@ -5,7 +6,7 @@
 2 / 2; // 1
 
 2 * 10; // 20
-
+///MODULUS OPERATOR-whenever you need to find even or odd--even will return zero 0 
 5 % 2; // 1  modulus-remainder of something
 
 10 % 2; // 0

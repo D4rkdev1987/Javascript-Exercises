@@ -17,3 +17,13 @@ images.forEach(img => imageUrlArray.push(img.src));  //gives an array format-.pu
                                                      //now type 
 
 copy(imageUrlArray)                                  //it takes images and places in an array format
+
+RETURNS BEAUTIFUL DATA when you paste it in any file
+every image below 
+[
+  "https://scontent-mia3-1.cdninstagram.com/v/t51.2885-15/e15/11230366_410836312429854_1392013267_n.jpg?_nc_ht=scontent-mia3-1.cdninstagram.com&_nc_cat=106&_nc_ohc=CJx2_pGgdUgAX-ZZXk1&oh=fdb55c64dce688ca723ea6e3cc476fab&oe=5E94379D",
+  "https://scontent-mia3-1.cdninstagram.com/v/t51.2885-15/e15/11226830_110273835971228_1084801496_n.jpg?_nc_ht=scontent-mia3-1.cdninstagram.com&_nc_cat=108&_nc_ohc=cgFUukh1JjIAX98le6W&oh=7de813e02e2805e03eec6887059f450d&oe=5E90ED2E",
+  "https://scontent-mia3-2.cdninstagram.com/v/t51.2885-15/e15/11242609_1588868194725963_763458443_n.jpg?_nc_ht=scontent-mia3-2.cdninstagram.com&_nc_cat=103&_nc_ohc=rAAu1zTNSgUAX-E6Vtu&oh=1ff156efcdb57e7ffdaba14a71dcec6f&oe=5EA71E85",
+  "https://scontent-mia3-2.cdninstagram.com/v/t51.2885-15/e15/11244650_432272566955475_518339951_n.jpg?_nc_ht=scontent-mia3-2.cdninstagram.com&_nc_cat=103&_nc_ohc=BeIXqFvfzDgAX9dSvOu&oh=16c8057fd823d763da5f75f74321cdd7&oe=5E951387",
+  "https://scontent-mia3-1.cdninstagram.com/v/t51.2885-15/e15/11249983_974791689231748_816469324_n.jpg?_nc_ht=scontent-mia3-1.cdninstagram.com&_nc_cat=104&_nc_ohc=gv9M-xfrKXEAX8XKU24&oh=abfa747b3f85da4af56c51c9c68bbb91&oe=5E96C905"
+]

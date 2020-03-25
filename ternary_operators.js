@@ -33,7 +33,7 @@ function ageVerification(age) {                //function called age verificatio
 
     //////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////
-    //TERNARY OPERATOR FOR ABOVE CODE below-a compunded one 
+    //TERNARY OPERATOR FOR ABOVE CODE below-a compounded one 
     let response = user ? user.admin ? "showing admin controls" : "you need to be admin" : "you need to be logged in";
     // user ? (is user true) now another ternary operator- user.admin ?(is user admin) and then the console logs each followed by a colon
     //////////////////////////////////////////////////////////////////////////

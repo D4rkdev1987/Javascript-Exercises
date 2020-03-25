@@ -6,9 +6,9 @@ const apiList = [
     'https://api.github.com/users/jordanhudgens'
   ]
   
-  const [posts, repos, profile] = apiList;
+  const [posts, repos, profile] = apiList;  // finds first element assigns to posts 2nd to repos and 3rd to profile
   
-  console.log(posts);
+  console.log(posts, repos, profile);
   console.log(repos);
   console.log(profile);
 

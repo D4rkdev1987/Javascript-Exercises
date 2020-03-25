@@ -21,4 +21,5 @@ async function queryApis() {
   queryApis();
 
   // using multiple try catch blocks
+  // use if you want to have the process stop and not continue on!
   //https://bottega.devcamp.com/12/guide/1348

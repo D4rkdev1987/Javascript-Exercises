@@ -2,15 +2,16 @@
 const user = {                       // variable user -plain object
     name: 'Kristine',                // keys
     email: 'kristine@devcamp.com',   
-    favorites: [
+    favorites: [                     // a list of items ( an array)
       'Chipotle',
       'Chik fil a'
     ]
   }
   
   user.email              // to see what the user looks like(email)
-  user.favorites[1]      
-  
+  user.favorites[1]       // will bring back chick fil a
+  /////////////////////////////////////////////////
+  // dailysmarty
   document                // returns a document object-takes all HTML code in
   
   document.location.href  // ocation-attribute  - href gives you URL

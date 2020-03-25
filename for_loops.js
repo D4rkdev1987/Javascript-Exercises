@@ -26,5 +26,6 @@ var players = [      //players array of strings here
   players.forEach(function(element) {  // call it players-forEach inside then (passing functions around) now the function and takes in an argument 
     console.log(element);              // for each is new-function being called on a collection
   });                                  // more functional- a function called on a collection-you can place in an object or another function
+                                       
 
 

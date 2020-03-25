@@ -27,8 +27,8 @@ tarveersing the dom- grab element further up- then search through elements
 $('.FPdoLc') returns the entire object
 $('.FPdoLc').childNodes[0]   //tells browser we are interested in what is nested
                          //moved form jsb 
-$('.FPdoLc').childNodes[3].childNodes[1]
-$('.FPdoLc').childNodes[3].childNodes[1].click()  will perform the search
+$('.FPdoLc').childNodes[1].childNodes[1]
+$('.FPdoLc').childNodes[1].childNodes[1].click()  will perform the search
                         
 
 

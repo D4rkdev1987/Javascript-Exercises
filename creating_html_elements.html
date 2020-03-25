@@ -8,8 +8,8 @@
 
 <body>
   <div class="widget">
-    <input type="text" id="chat-input"> //first create the input with an id of chat input 
-    <button id="msgBtn" onclick="sendMessage()">Submit</button> //now create the button with an onlick 
+    <input type="text" id="chat-input">                           <!--//first create the input with an id of chat input--> 
+    <button id="msgBtn" onclick="sendMessage()">Submit</button>   <!--//now create the button with an onlick--> 
     <button onlick="clearMessages()"> Clear Messages</button>
 
     <div class="chat-wrapper"></div>
@@ -17,24 +17,26 @@
 </body>
 
 <script>
-  function sendMessage() { //function send message takes in no arguments
-    const newDiv = document.createElement("div"); // generator(html) variable-to create a new div createElement takes in a string
-    newDiv.classList.add('chatMsg'); // add in the new item and place in the chatMsg-adds class to new div
-    let chatInput = document.querySelector('#chat-input').value; // to place in conetnt use the query selector and then grab the chat input id then grab the value
-    const newContent = document.createTextNode(chatInput); // create variable for new content set equal to createTextNode then pass in chatInput value
-    newDiv.appendChild(newContent);  //now call new div and append child and paste in the new content value
-    const widget = document.querySelector(".widget"); // grab widget wrapper- use the query selector and then grab the widget class
-    let chatWrapper = document.querySelector("chat-wrapper"); // create a chat wrapper use the query selector-
-    document.querySelector('#chat-input').value = '';  // then grab the chat input here and then the value which is equal to the empty string-which clears the chat box
-    if (document.querySelectorAll('.chatMsg').length > 0) {  //conditional-grabbing all elements that have chat message-check the length 
-      chatWrapper = document.querySelectorAll('.chatMsg')[0]; // reassign the chatwrapper and change it to chatMsg and grab the first 1(zeroith index)
+  function sendMessage() {                                           //function send message takes in no arguments
+    const newDiv = document.createElement("div");                    // generator(html) variable-to create a new div createElement takes in a string
+    newDiv.classList.add('chatMsg');                                 // add in the new item and place in the chatMsg-adds class to new div
+    let chatInput = document.querySelector('#chat-input').value;     // to place in conetnt use the query selector and then grab the chat input id then grab the value
+    const newContent = document.createTextNode(chatInput);           // create variable for new content set equal to createTextNode then pass in chatInput value
+    newDiv.appendChild(newContent);                                  //now call new div and append child and paste in the new content value
+
+    const widget = document.querySelector(".widget");                // grab widget wrapper- use the query selector and then grab the widget class
+    let chatWrapper = document.querySelector('#chat-wrapper');       // create a chat wrapper use the query selector
+    document.querySelector('#chat-input').value = '';                // then grab the chat input here and then the value which is equal to the empty string-which clears the chat box
+    
+    if (document.querySelectorAll('.chatMsg').length > 0) {          //conditional-grabbing all elements that have a class of chat message-check the length and if greater than zero
+      chatWrapper = document.querySelectorAll('.chatMsg')[0];        // reassign the chatwrapper and change it to chatMsg and grab the first 1(zeroith index)
     }
-    widget.insertBefore(newDiv, chatWrapper);  // insertBefore takes in the newDic and the chatWrapper
+    widget.insertBefore(newDiv, chatWrapper);                        // insertBefore takes in the newDiv and the chatWrapper
   }
   //clear messages below-by calling the button 
-  function clearMessages() {
-    const messages = document.querySelectorAll('.chatMsg');
-    messages.forEach(el => el.remove());//selects each div and iterates over them and hits the remove function and deletes them
+  function clearMessages() {                                         // create a function called clear function and takes no args
+    const messages = document.querySelectorAll('.chatMsg');          //  grab the messages equals then query selector all and then pass in the class chatMsg (returns a node list)
+    messages.forEach(message => message.remove());                   // now say messages forEach then pass in a function 
   }
 </script>
 

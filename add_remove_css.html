@@ -20,14 +20,14 @@
 </body>
 
 <script>
-  const laptop = document.querySelector('.site-img');  //create the variable and use the querySelector and pass in the class look up
+  const laptop = document.querySelector('.site-img');  //create the variable laptop set equal to and use the querySelector and pass in the class look up
 
-  laptop.addEventListener('mouseover', (e) => {        // pass in the mouseover listener and second arg e and the function
-    e.target.style.borderRight = '40px solid red';     //use target which is the element-then style-camel case the borderRight then insert the style
+  laptop.addEventListener('mouseover', (e) => {        //now add the event listener and pass in the mouseover listener as first arg and second arg e and the function
+    e.target.style.borderRight = '40px solid red';     //now you have access to e and use target which is the element-then style-camel case the borderRight then insert the style
   });
 
   laptop.addEventListener('mouseout', (e) => {         // now insert mouseout with the same code
-    e.target.style.borderRight = '40px solid transparent';  // insert transparent-
+    e.target.style.borderRight = '40px solid transparent';  // insert transparent-it will completely invisible 
   });
 </script>
 </html>

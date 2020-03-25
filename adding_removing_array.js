@@ -1,6 +1,6 @@
 var arr = ['Altuve', 'Bregman', 'Correa', 'Springer']; //basic array-baseball players 
 
-arr.pop(); // "Springer"   //is a function- and returns the very last item from the array and pops it off
+arr.pop(); // "Springer"   //is a function- and returns the very last item from the array and pops it off( to iterate over an array)
                            //cleaning or popping items off the array
 arr; // ['Altuve', 'Bregman', 'Correa']
 

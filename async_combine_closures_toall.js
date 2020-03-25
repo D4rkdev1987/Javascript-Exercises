@@ -2,10 +2,9 @@ const login = () => {                             ////const variable login store
     return new Promise((resolve, reject) => {     ////return a promise takes in resolve and reject args
       setTimeout(() => {                          ////setTimeout arrow function passed in
         resolve('User logged in...');             ////return the resolve --a string User logged in(real world would communicate with db and return data)
-      }, 4000);                                   ////4 seconds
+      }, 4000);                                  
     });
   }
-  
   const updateAccount = () => {                   ////variable updateAccount stores the arrow function no args
     return new Promise((resolve, reject) => {     ////return the new Promise passes in resolve and reject
       setTimeout(() => {                          

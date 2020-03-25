@@ -8,10 +8,10 @@ var players = [                 // players array
     'Springer'
   ];
   
-  var i = 0;                   // first declare an interator variable
-  while (i < players.length) { // now... while loop--> while i is less than players.length
+  var i = 0;                   // first declare an interator variable call it what ever you want
+  while (i < players.length) { // now... while loop--> while i is less than players.length (similar to conditional in for loop)
     console.log(players[i]);   // then console log the players and then grab the index indiex(i)
-    i++;                       // manually create the incrementor..--->  i++(everytime it goes through loop it increases)
+    i++;                       // manually create the incrementor..--->  i++(everytime it goes through loop it increases, it checks if i is less than players length)
   }
   
   var i = 21;                  

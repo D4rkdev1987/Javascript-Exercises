@@ -1,0 +1,10 @@
+Formal Term     Action         Practical Example
+POST          Create           Creating a new Tweet
+GET            Read            Seeing a single or multiple Tweets
+PUT            Update/Replace  Replacing a Tweet
+PATCH        Update/Modify     Editing a Tweet
+DELETE       Delete            Deleting a Tweet
+
+REST stands for Representational State Transfer
+
+HTTP Protocol-One of the issues with HTTP is that it is stateless. Which means that when you navigate from one page to another page, HTTP doesn’t retain any of the information between pages.

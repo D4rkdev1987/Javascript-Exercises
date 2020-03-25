@@ -10,4 +10,4 @@ arr; // ["Altuve", "Bregman", "Springer"]
 arr.splice(1, 2); // ["Bregman", "Springer"] // start at 1 and take out 2 items-removing items
 arr; // ["Altuve"]
 
-// splice always returns an array-above returned an array of length of 1
+/////////////// splice always returns an array-above returned an array of length of 1////////////////

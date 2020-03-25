@@ -29,7 +29,7 @@ str.repeat(5);   // "The quick brown fox jumped over the lazy dogThe quick brown
                  //takes in a regular expression-if string contains a phone number-below
                  //its a pattern matching system
                  //this is compared to our string-does the pattern match whats in the string-returns null
-str.match(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/) // null-
+str.match(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/); // null-
                                                              //below returns a full object back
 '555-555-5555'.match(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/) // (4) ["555-555-5555", "555-", undefined, "555-", index: 0, input: "555-555-5555"]0: "555-555-5555"1: "555-"2: undefined3: "555-"index: 0input: "555-555-5555"length: 4__proto__: Array(0)
                 
@@ -39,7 +39,7 @@ str.replace('fox', 'wolf'); // "The quick brown wolf jumped over the lazy dog"
 
                 //search below- what search does looks for a pattern that it matches with it returns the index
                 //below returns at the zeroeth index because it's the beginning 
-'555-555-5555 is my phone number'.search(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/) // 0
+'555-555-5555 is my phone number'.search(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/) // 0 searches for the the index
 'Hi, 555-555-5555 is my phone number'.search(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/) // 4
 
                        //indexof-returns the index of 20

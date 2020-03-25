@@ -19,7 +19,7 @@ function fullName (fName, lName) {
   
   
   // Arrow function with shorthand function argument for single arguments
-  firstName = fname => { console.log(fname.toUpperCase()); }  //name of function, pass a single arg, then the arrow function, then inside the fname and toUpperCase function
+  firstName = (fname) => { console.log(fname.toUpperCase()); }  //name of function, pass a single arg, then the arrow function, then inside the fname and toUpperCase function
   firstName('Jordan');                                        // call the function here and pass in the value here
   //for a single argument-first name then fname then the arrow function then console log and call fname 
   //then call first name and pass in the value

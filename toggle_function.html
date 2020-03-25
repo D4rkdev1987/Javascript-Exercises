@@ -21,10 +21,10 @@
 </body>
 
 <script>
-  const heading = document.getElementById('mainHeading'); // selector first -use getElement by id and pass in mainheading
-  const btn = document.getElementById('toggleBtn'); // now grab accss to the button here
-  btn.addEventListener('click', (e) => { // the event listener and pass in the click and the function
-    heading.classList.toggle('hidden'); //grab the heading classlist and then toggle function-toggle expects the class we want to toggle(hidden)
+  const heading = document.getElementById('mainHeading');         // selector first-say const heading set equal -use getElement by id and pass in  id of mainheading
+  const btn = document.getElementById('toggleBtn');               // now grab access to the button here const btn----pass in the toggle button id
+  btn.addEventListener('click', (e) =>  {                          // the event listener addEventListener then listen for the click and pass in the click and the function
+    heading.classList.toggle('hidden');                           //grab the heading classlist and then toggle function-toggle expects the class we want to toggle(hidden)
   });
 </script>
 </html>

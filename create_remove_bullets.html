@@ -31,16 +31,16 @@
 </body>
 
 <script>
-  const todos = document.querySelectorAll('.todoItem'); // first grab all todo items-use querySelectorAll and pass in .todoItem
-  const completedTodos = document.querySelector('.completed'); // to see which ones were complete and at the end pass in the completed class
-  const completedTodoWrapper = document.querySelector('.completedTodoWrapper'); // call the completed to do wrapper and pass in the completedTodoWrapper
+  const todos = document.querySelectorAll('.todoItem');                         //first grab all todo items-use querySelectorAll and pass in .todoItem
+  const completedTodos = document.querySelector('.completed');                  //to see which ones were complete and at the end pass in the completed class
+  const completedTodoWrapper = document.querySelector('.completedTodoWrapper'); //call the completed to do wrapper and pass in the completedTodoWrapper
 
-  todos.forEach(todo => todo.addEventListener('click', (event) => { // to iterate through the todos use forEach and add in the even listener listen for a click and the click gives you an event here
-    let completedTodo = document.createElement('li'); // pass in a function and create a few variables- createElement and create an li tag and stored in completed todo
-    let todoContent = document.createTextNode(todo.textContent); // here use createTextNode for the content
-    completedTodo.appendChild(todoContent); //  now we need to check for our completed toDo and then use appendchild and pass in the todoContent
-    completedTodoWrapper.insertBefore(completedTodo, completedTodos); //  take the wrapper and insert before the completed todo inside the completed todos
-    todo.remove(); //then remove the item from the appending todo list
+  todos.forEach(todo => todo.addEventListener('click', (event) => {    //to iterate through the todos use forEach and add in the even listener listen for a click and the click gives you an event here
+    let completedTodo = document.createElement('li');                  //pass in a function and create a few variables- createElement and create an li tag and stored in completed todo
+    let todoContent = document.createTextNode(todo.textContent);       //here use createTextNode for the content
+    completedTodo.appendChild(todoContent);                            //now we need to check for our completed toDo and then use appendchild and pass in the todoContent
+    completedTodoWrapper.insertBefore(completedTodo, completedTodos);  //take the wrapper and insert before the completed todo inside the completed todos
+    todo.remove();                                                     //then remove the item from the appending todo list
   }));
 </script>
 

@@ -42,13 +42,13 @@
 </body>
 
 <script>
-  const img = document.getElementsByClassName('site-img')[0];  // variable img them query it by className-pass in site-img then the zeroith index
-  img.addEventListener('click', (e) => {                       // call the img object- then add eventListener takes 2 elements-event to listen to than the function  
+  const img = document.getElementsByClassName('site-img')[0];  // variable img then query it by getElementsByclassName-pass in site-img then the zeroith index
+  img.addEventListener('click', (e) => {                       // call the img object- then add eventListener takes 2 elements-event to listen to than the arrow function  
                                                                // e is the event object
     debugger;
   });
   const imgs = document.querySelectorAll('.site-img');         // create the variable set equal to the queryslectorAll then grab the site-img class
-  imgs.forEach(img => {        //forEach loop-start with arg of img(item we are iterating over) then arrow function
+  imgs.forEach(img => {                                        //forEach loop-start with arg of img(item we are iterating over) then arrow function
     img.addEventListener('mouseover', (event) => {             // say img then the type of listener we want to add mouseover and then the event
       const captionElement = event.target.parentElement.children[1]; // set it equal to the event target-then traverse the DOM-
                                                                //look for parent element then the childElement then second child (1)

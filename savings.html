@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>My Future Investment</title>
+</head>
+<style>
+    body {
+        background: url('http://lorempixel.com/400/200/sports/') center center fixed;
+        background-attachment: fixed;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.616);       
+    }
+
+    output {
+        display:block;
+    }
+</style>
+<body>
+    <h1>Savings Investment</h1>
+    <h2>How much will I have if I invest this much for this long?</h2>
+    
+    <input type="text" placeholder="First Name" class="first-js" />
+    <input type="text" placeholder="Last Name" class="last-js" />
+    <input type="text" placeholder="Principal" class="principal-js" />
+    <input type="text" placeholder="Annual Rate (ex: .08)" class="rate-js" />
+    <input type="text" placeholder="Number of Years" class="years-js" />
+    <input type="text" placeholder="Periods per Year" class="periods-js" />
+    <input type="button" value="Submit" class="button-js" />
+    
+    <output></output>
+  <script>  
+    var first = document.querySelector('.first-js');
+    var last = document.querySelector('.last-js');
+    var amount = document.querySelector('.principal-js');
+    var rate = document.querySelector('.rate-js');
+    var years = document.querySelector('.years-js');
+    var months = document.querySelector('.periods-js');
+    var button = document.querySelector('.button-js');
+    var output = document.querySelector('output');
+    var futurevalue = function(a, r, m, y) {
+    var value = a * Math.pow(1 + (r / m), (y * m));
+    return value;
+    };
+
+
+    button.addEventListener('click', function() {
+    var fn = first.value;
+    var ln = last.value;
+    var a = parseFloat(amount.value);
+    var r = parseFloat(rate.value);
+    var m = parseFloat(months.value);
+    var y = parseFloat(years.value);
+    var result = futurevalue(a, r, m, y);
+    var e = result - a;
+    output.textContent = fn + " " + ln + " the future value of your investment = " + "$" + result.toFixed(2) + ".  That's $" + e + " in interest earned!";
+    });
+
+    // You must use at least two functions, one that passes parameters, and another that returns the calculated result based on those parameters.
+
+    // Bonus: Also show what the user earned just in interest alone.    
+  </script>
+</body>
+</html>

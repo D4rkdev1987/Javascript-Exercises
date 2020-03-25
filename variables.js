@@ -9,9 +9,10 @@ console.log(name);
 console.log(city);
 
 //variables starts with var
+// when ever you store something in a vairable in the console it returns undefinds 
 
-// 2 basics was to declare variables
-// var age = 12;          // var is something you can change
+// 2 basics ways to declare variables
+// var age = 12;            // var is something you can change
 // let name = 'kristine';   // let you don't want to change/or can't change
 
 // variables are tools to store data-like a bucket you can place items in it

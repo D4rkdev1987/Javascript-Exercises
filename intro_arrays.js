@@ -15,7 +15,7 @@ var generatedArray = new Array(3); // [undefined, undefined, undefined] //if you
 var literalArray = [1, 2, 3];  //common way-array liertal syntax-uses the brackets-three items
 
 //nested array below       //object below-key value pair
-var mixedArray = ['Hi', 1, ['a', 'b', 'c'], { name: 'Kristine' }];
+var mixedArray = ['Hi', 1, ['a', 'b', 'c'], { name: 'Kristine' }, function greeting() { console.log('hey there')}];
 // above-for mixed elements data types- combine anything- nested array a b c, and an object too in the curly
 
 //to get things out of arrays below
@@ -23,3 +23,5 @@ var mixedArray = ['Hi', 1, ['a', 'b', 'c'], { name: 'Kristine' }];
 //complex arrays- mixedArray[2][2];-when you have nested just use double bracket-returns C
 //mixedArray- mixedArray[3].name; prints Kristine
 //to call a greeting mixedArray[4](); prints Hey there
+
+

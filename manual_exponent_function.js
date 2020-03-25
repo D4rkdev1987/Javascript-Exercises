@@ -14,3 +14,6 @@ const toThePowerOf = (num, exp) => {     // create an arrow function takes in 2 
   toThePowerOf(4, 2); //?
   toThePowerOf(10, 10); //?
   10 ** 10; //?
+
+
+  

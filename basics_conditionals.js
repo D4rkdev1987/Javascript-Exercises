@@ -1,9 +1,10 @@
+//conditionals give you ability to check comparrsion to eachother
 //beginning and basics of comparision 
 var age = 10;  //variable age is equal to 10
 var ageTwo = '12';
 //to check if equal say if age is equal to ageTwo 
 //then use curly braces and console.log 
-if (age == ageTwo) {
+if (age == ageTwo) {               
     console.log('They are equal');
 }
 
