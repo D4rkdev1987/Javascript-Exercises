@@ -1,4 +1,4 @@
-                                     //Document object model-DOM
+                    //Document object model-DOM
 const user = {                       // variable user -plain object
     name: 'Kristine',                // keys
     email: 'kristine@devcamp.com',   
@@ -14,7 +14,7 @@ const user = {                       // variable user -plain object
   // dailysmarty
   document                // returns a document object-takes all HTML code in
   
-  document.location.href  // ocation-attribute  - href gives you URL
+  document.location.href  // location-attribute  - href gives you URL
   
   // On dailysmarty
   document.location.protocol  // .protocol gives you the http

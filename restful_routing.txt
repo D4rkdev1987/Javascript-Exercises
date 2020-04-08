@@ -7,4 +7,5 @@ DELETE       Delete            Deleting a Tweet
 
 REST stands for Representational State Transfer
 
-HTTP Protocol-One of the issues with HTTP is that it is stateless. Which means that when you navigate from one page to another page, HTTP doesn’t retain any of the information between pages.
+HTTP Protocol-One of the issues with HTTP is that it is stateless. 
+Which means that when you navigate from one page to another page, HTTP doesn’t retain any of the information between pages.
